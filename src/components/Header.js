@@ -7,17 +7,19 @@ function Header({ search, setSearch }) {
   return (
     <header>
       <div className="header-inner">
-        <h1>Shoe Store</h1>
+        <Link to="/" className="logo-link">
+          <h1>Shoe Store</h1>
+        </Link>
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/cart">Cart</Link>
+          {/* Removed Cart Link as per request */}
         </nav>
         {path === '/' && (
           <input
             type="text"
             placeholder="Search shoes..."
             value={search}
-            onChange={e => setSearch(e.target.value)}
+            onChange={(e) => setSearch(e.target.value)}
           />
         )}
       </div>
