@@ -62,6 +62,7 @@ footer {
   background: white;
   padding: 15px;
   border-radius: 6px;
+  height: fit-content;
 }
 .summary-item {
   display: flex;
